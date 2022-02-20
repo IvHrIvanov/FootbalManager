@@ -1,6 +1,8 @@
 ﻿<h1 class="text-center mt-2">My Collection</h1>
 <div class="row mt-2 mb-4">
     <div class="player col-6 col-lg-3 game-player">
+        {{foreach}}
+        {    
         <img src={{ImageUrl}}
              class="player-img-top img-fluid player-image">
         <div class="player-body">
@@ -15,6 +17,7 @@
                 </li>
             </ul>
             <a href="/Players/RemoveFromCollection?playerId=X" class="btn btn-block btn-danger">Remove from Collection</a>
+        }
         </div>
     </div>
 </div>

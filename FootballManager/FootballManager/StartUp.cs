@@ -18,10 +18,11 @@
 
 
             server.ServiceCollection
-                .Add <IUserService,UserService>()
+                .Add<IUserService, UserService>()
                 .Add<FootballManagerDbContext>()
-                .Add<IRepository,Repository>()
-                .Add<IValidationService,ValidationService>();
+                .Add<IRepository, Repository>()
+                .Add<IValidationService, ValidationService>()
+                .Add<IPlayerService,PlayerService>();
 
             await server.Start();
         }

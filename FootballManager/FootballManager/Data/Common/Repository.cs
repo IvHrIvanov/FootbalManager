@@ -1,6 +1,5 @@
 ﻿using FootballManager.Data;
 using Microsoft.EntityFrameworkCore;
-using SMS.Data;
 using System.Linq;
 
 namespace Sms.Data.Common
